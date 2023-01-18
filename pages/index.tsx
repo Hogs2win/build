@@ -32,8 +32,7 @@ const Home = ({netflixOriginals,
 
 
   return (
-    <div className="relative h-screen bg-gradient-to-b from-gray-900/10
-    to-[#4c4f58] lg:h-[140vh]">
+    <div className="relative h-screen bg-gradient-to-b lg:h-[140vh]">
       <Head>
         <title>Home - Malco</title>
         <link rel="icon" href="/favicon.ico" />
@@ -48,7 +47,7 @@ const Home = ({netflixOriginals,
       <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16">
         {/* Banner - Pass  */}
         <Banner netflixOriginals={netflixOriginals}/>
-        <section>
+        <section className="md:space-y-24 lg:pl-16">
           {/* Row Comp*/}
           <Row title="Trending" movies={trendingNow}/>
           <Row title="Top Rated" movies={topRated}/>
